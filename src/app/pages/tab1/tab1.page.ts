@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { DeseosService } from '../../services/deseos.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { DeseosService } from '../../services/deseos.service';
 
 @Component({
   selector: 'app-tab1',
@@ -10,7 +10,8 @@ import { AlertController } from '@ionic/angular';
 })
 export class Tab1Page {
 
-  constructor(public deseosService: DeseosService,
+  constructor(
+    public deseosService: DeseosService,
     private router: Router,
     private alertCtrl: AlertController) {
   }

@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { Tab2Page } from './tab2.page';
+import { ComponentsModule } from '../../../components/components.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    ComponentsModule,
     RouterModule.forChild([{ path: '', component: Tab2Page }])
   ],
   declarations: [Tab2Page]
